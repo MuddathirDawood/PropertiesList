@@ -3,7 +3,7 @@
 #logo{
     width: 60px;
     height: 55px;
-    margin-right: 50px;
+    margin-right: 25px;
 }
 
 header{
@@ -33,6 +33,16 @@ header{
     margin-right: 28%;
 }
 
+@media (max-width:426px){
+    .navbar-brand{
+        margin-right: 0;
+        font-weight: 500;
+    }
+    #logo{
+        margin-right: 0;
+    }
+}
+
 /*\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ Landing Page //////////////////////////////////////////////////////////*/
 #landingpg{
     min-height: 90vh;
@@ -43,7 +53,6 @@ header{
 
 #landingpg>.container{
     position: absolute;
-    content: '';
     top: 0;
     bottom: 0;
     left: 0;

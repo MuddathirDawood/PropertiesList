@@ -40,6 +40,30 @@
                 <p>and ensures that the client gets what they want</p>
             </div>
         </section>
+        <section id="properties">
+            <nav class="navbar bg-secondary">
+                <div class="container-fluid">
+                  <form class="d-flex" role="search">
+                    <input class="form-control" type="search" placeholder="Enter keyword" id="search">
+                    <button class="btn btn-outline-primary" type="submit">Search</button>
+                  </form>
+                </div>
+                <div class="dropdown-center">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownCenterBtn" data-bs-toggle="dropdown" aria-expanded="false">
+                      Max Price
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownCenterBtn">
+                      <li><a class="dropdown-item" onclick="budget(999999999)" href="#">Any</a></li>
+                      <li><a class="dropdown-item" onclick="budget(500)" href="#">$500</a></li>
+                      <li><a class="dropdown-item" onclick="budget(1000)" href="#">$1000</a></li>
+                      <li><a class="dropdown-item" onclick="budget(2000)" href="#">$2000</a></li>
+                      <li><a class="dropdown-item" onclick="budget(4000)" href="#">$4000</a></li>
+                      <li><a class="dropdown-item" onclick="budget(6000)" href="#">$6000</a></li>
+                      <li><a class="dropdown-item" onclick="budget(10000)" href="#">$10000</a></li>
+                    </ul>
+                  </div>
+              </nav>
+        </section>
     </main>
 
 
