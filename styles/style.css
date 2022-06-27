@@ -2,14 +2,14 @@
 
 #logo{
     width: 60px;
-    height: 60px;
+    height: 55px;
     margin-right: 50px;
 }
 
 header{
     border: 1px groove black;
     z-index: 3;
-    background: linear-gradient(rgb(2, 2, 143),white,white,white,rgb(2, 2, 143));
+    background: linear-gradient(rgb(3, 0, 56),white,white,white,rgb(3, 0, 56));
 }
 
 .btn{
@@ -30,12 +30,12 @@ header{
 .navbar-brand{
     font-weight: 600;
     font-family: 'Roboto', sans-serif;
-    margin-right: 34%;
+    margin-right: 28%;
 }
 
 /*\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ Landing Page //////////////////////////////////////////////////////////*/
 #landingpg{
-    min-height: 92vh;
+    min-height: 90vh;
     background: url(/assets/436964.png) no-repeat center center/cover;
     position: relative;
     min-width: 100vw;
@@ -48,7 +48,7 @@ header{
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: rgba(3, 0, 56, 0.57);
+    background-color: rgba(0, 0, 0, 0.7);
     z-index: 2;
     min-width: 100vw;
     margin: 0 0 0 0;
