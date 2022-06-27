@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime&family=Roboto&display=swap');
+
+#logo{
+    width: 60px;
+    height: 60px;
+    margin-right: 50px;
+}
+
+header{
+    border: 1px groove black;
+    z-index: 3;
+    background: linear-gradient(rgb(2, 2, 143),white,white,white,rgb(2, 2, 143));
+}
+
+.btn{
+    border: 1px solid black;
+    border-radius: 0;
+}
+
+#search{
+    border-radius: 0;
+}
+
+.nav-link{
+    font-weight: 500;
+    color: black;
+    font-size: 17px;
+}
+
+.navbar-brand{
+    font-weight: 600;
+    font-family: 'Roboto', sans-serif;
+    margin-right: 34%;
+}
+
+/*\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ Landing Page //////////////////////////////////////////////////////////*/
+#landingpg{
+    min-height: 92vh;
+    background: url(/assets/436964.png) no-repeat center center/cover;
+    position: relative;
+    min-width: 100vw;
+}
+
+#landingpg>.container{
+    position: absolute;
+    content: '';
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(3, 0, 56, 0.57);
+    z-index: 2;
+    min-width: 100vw;
+    margin: 0 0 0 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#landingpg>.container>h2{
+    font-size: 50px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 800;
+    font-style: italic;
+    color: white;
+    text-shadow: 0 0 10px black;
+}
+
+#landingpg>.container p{
+    text-shadow: 0 0 10px black;
+    color: white;
+    margin-bottom: 0;
+    font-style: italic;
+    font-size: 19px;
+}
