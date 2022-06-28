@@ -37,6 +37,7 @@ body{
 #landingpg{
     min-height: 100vh;
     background: url(/assets/436964.png) no-repeat center center/cover;
+    background-attachment: fixed;
     position: relative;
     min-width: 95vw;
     z-index: 1;
@@ -84,10 +85,11 @@ body{
     font-size: 19px;
 }
 
-/*\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ Filter ///////////////////////////////////////////////////////*/
+/*\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ Filter ////////////////////////////////////////////////////////////////*/
 #search{
     border-radius: 0;
     width: 250px;
+    border: 1px solid black;
 }
 
 .btn{
@@ -103,8 +105,6 @@ body{
     border: 1px solid #5c636a;
     background-color: #5c636a;
 }
-
-
 
 #filter{
     position: absolute;
@@ -123,5 +123,28 @@ body{
 #filter>nav>.row{
     margin-left: 15px;
     border-radius: 200px;
-    margin-right: 15px;
+
     }
+
+/*\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ Properties ////////////////////////////////////////////////////////////////*/
+#properties{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin: 35px 35px 35px 35px;
+}
+
+.card p{
+    margin-bottom: 0;
+    border-radius: 0;
+}
+
+.card{
+    margin-top: 50px;
+    height: 450px;
+    width: 20em;
+}
+
+.card img{
+    height: 250px;
+}
