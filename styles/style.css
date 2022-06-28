@@ -23,6 +23,11 @@ body{
     margin-right: 28%;
 }
 
+#stuff>.navbar>.container-fluid{
+    z-index: 6;
+    text-shadow: 0 0 5px white;
+}
+
 @media (max-width:426px){
     .navbar-brand{
         margin-right: 0;
@@ -125,6 +130,12 @@ body{
     border-radius: 200px;
 
     }
+
+    @media (max-width:426px){
+        #filter>nav{
+           border-radius: 0;
+        }
+    }    
 
 /*\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ Properties ////////////////////////////////////////////////////////////////*/
 #properties{

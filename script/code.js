@@ -155,3 +155,11 @@ properties.forEach((land,index)=>{
 (function addData(){
     localStorage.setItem('land',JSON.stringify(properties));
 })();
+
+
+document.querySelector('#searchbtn').addEventListener('click',()=>{
+    let budgets = function budget(amount){
+        return amount
+    }
+    console.log(typeof(budgets));
+})
