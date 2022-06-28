@@ -64,6 +64,71 @@ let properties = [
     },
     price: 905000,
     size: 3418   
+},{
+    id: 6,
+    address:{
+        region: 'Makakilo',
+        neighbourhood: 'Makakilo-Lower',
+        street: '92-356 Akaula Street'
+    },
+    rooms:{
+        bedrooms: 5,
+        bathrooms: 3
+    },
+    price: 975000,
+    size: 6405   
+},{
+    id: 7,
+    address:{
+        region: 'Kaneohe',
+        neighbourhood: 'Haiku Knolls',
+        street: '46-350 Nahewai Street'
+    },
+    rooms:{
+        bedrooms: 7,
+        bathrooms: 6
+    },
+    price: 3350000,
+    size: 20056   
+},{
+    id: 8,
+    address:{
+        region: 'Leeward',
+        neighbourhood: 'Waianae',
+        street: ' '
+    },
+    rooms:{
+        bedrooms: 3,
+        bathrooms: 1
+    },
+    price: 125000,
+    size: 1505   
+},{
+    id: 9,
+    address:{
+        region: 'Leeward',
+        neighbourhood: 'Maili',
+        street: '87-133 Hila Street'
+    },
+    rooms:{
+        bedrooms: 3,
+        bathrooms: 1
+    },
+    price: 450000,
+    size: 5000   
+},{
+    id: 10,
+    address:{
+        region: 'Metro',
+        neighbourhood: 'Nuuanu-Lower',
+        street: '1946 Pauoa Road A'
+    },
+    rooms:{
+        bedrooms: 2,
+        bathrooms: 1
+    },
+    price: 460000,
+    size: 1001   
 }
 ];
 

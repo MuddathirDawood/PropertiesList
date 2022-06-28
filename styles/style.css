@@ -130,7 +130,8 @@ body{
 #properties{
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 25px;
     margin: 35px 35px 35px 35px;
 }
 
