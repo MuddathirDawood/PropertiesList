@@ -9,7 +9,9 @@
     <title>Properties Listing</title>
 </head>
 <body>
-    <header>
+  <header>
+      <section id="landingpg">
+        <div id="stuff">
         <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
               <img src="./assets/Logo'.png" alt="Logo" id="logo"> <a class="navbar-brand" href="#">MD'S HOUSING</a>
@@ -31,38 +33,67 @@
               </div>
             </div>
           </nav>
-    </header>
-    <main>
-        <section id="landingpg">
-            <div class="container">
-                <h2>Welcome To MD'S Housing</h2><br>
-                <p>MD'S HOUSING is a housing agency that works in Hawaii</p>
-                <p>and ensures that the client gets what they want</p>
+            <div style = "user-select: none;"class="container">
+              <h2>Welcome To MD'S Housing</h2><br>
+              <p>MD'S HOUSING is a housing agency that works in Hawaii</p>
+              <p>and ensures that the client gets what they want</p>
             </div>
-        </section>
-        <section id="properties">
+          </div>
+          </section>
+        </header>
+        <main>
+          <section id="filter">
             <nav class="navbar bg-secondary">
-                <div class="container-fluid">
-                  <form class="d-flex" role="search">
-                    <input class="form-control" type="search" placeholder="Enter keyword" id="search">
-                    <button class="btn btn-outline-primary" type="submit">Search</button>
-                  </form>
-                </div>
-                <div class="dropdown-center">
-                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownCenterBtn" data-bs-toggle="dropdown" aria-expanded="false">
+                <div class="row">
+                  <div class="dropdown-center col-md-2">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownCenterBtn" data-bs-toggle="dropdown">
                       Max Price
                     </button>
-                    <ul class="dropdown-menu" aria-labelledby="dropdownCenterBtn">
-                      <li><a class="dropdown-item" onclick="budget(999999999)" href="#">Any</a></li>
-                      <li><a class="dropdown-item" onclick="budget(500)" href="#">$500</a></li>
-                      <li><a class="dropdown-item" onclick="budget(1000)" href="#">$1000</a></li>
-                      <li><a class="dropdown-item" onclick="budget(2000)" href="#">$2000</a></li>
-                      <li><a class="dropdown-item" onclick="budget(4000)" href="#">$4000</a></li>
-                      <li><a class="dropdown-item" onclick="budget(6000)" href="#">$6000</a></li>
-                      <li><a class="dropdown-item" onclick="budget(10000)" href="#">$10000</a></li>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" onclick="budget(999999999)">Any</a></li>
+                      <li><a class="dropdown-item" onclick="budget(500)">$50000</a></li>
+                      <li><a class="dropdown-item" onclick="budget(1000)">$100000</a></li>
+                      <li><a class="dropdown-item" onclick="budget(2000)">$200000</a></li>
+                      <li><a class="dropdown-item" onclick="budget(4000)">$400000</a></li>
+                      <li><a class="dropdown-item" onclick="budget(6000)">$600000</a></li>
+                      <li><a class="dropdown-item" onclick="budget(10000)">$1000000</a></li>
+                      <li><a class="dropdown-item" onclick="budget(10000)">$5000000</a></li>
                     </ul>
                   </div>
+                  <div class="dropdown-center col-md-2">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownCenterBtn" data-bs-toggle="dropdown">
+                      Bedrooms
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" onclick="bedrooms(2)">2</a></li>
+                      <li><a class="dropdown-item" onclick="bedrooms(3)">3</a></li>
+                      <li><a class="dropdown-item" onclick="bedrooms(4)">4</a></li>
+                      <li><a class="dropdown-item" onclick="bedrooms(5)">5</a></li>
+                      <li><a class="dropdown-item" onclick="bedrooms(6)">6</a></li>
+                      <li><a class="dropdown-item" onclick="bedrooms(99)">More than 6</a></li>
+                    </ul>
+                  </div>
+                  <div class="dropdown-center col-md-2">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownCenterBtn" data-bs-toggle="dropdown">
+                      Bathrooms
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" onclick="bedrooms(1)">1</a></li>
+                      <li><a class="dropdown-item" onclick="bedrooms(2)">2</a></li>
+                      <li><a class="dropdown-item" onclick="bedrooms(3)">3</a></li>
+                      <li><a class="dropdown-item" onclick="bedrooms(4)">4</a></li>
+                      <li><a class="dropdown-item" onclick="bedrooms(99)">More than 4</a></li>
+                    </ul>
+                  </div>
+                  <form class="d-flex col-md-2" role="search">
+                    <input class="form-control" type="search" placeholder="Enter keyword" id="search">
+                    <button class="btn" type="submit" id="searchbtn">Search</button>
+                  </form>
+                  
+                </div>
               </nav>
+          </section>
+        <section id="properties">
         </section>
     </main>
 

@@ -1,24 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Courier+Prime&family=Roboto&display=swap');
 
+body{
+    overflow-x: hidden;
+}
+
+
 #logo{
     width: 60px;
     height: 55px;
     margin-right: 25px;
-}
-
-header{
-    border: 1px groove black;
-    z-index: 3;
-    background: linear-gradient(rgb(3, 0, 56),white,white,white,rgb(3, 0, 56));
-}
-
-.btn{
-    border: 1px solid black;
-    border-radius: 0;
-}
-
-#search{
-    border-radius: 0;
 }
 
 .nav-link{
@@ -45,19 +35,29 @@ header{
 
 /*\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ Landing Page //////////////////////////////////////////////////////////*/
 #landingpg{
-    min-height: 90vh;
+    min-height: 100vh;
     background: url(/assets/436964.png) no-repeat center center/cover;
     position: relative;
-    min-width: 100vw;
+    min-width: 95vw;
+    z-index: 1;
 }
 
-#landingpg>.container{
+#landingpg>#stuff{
     position: absolute;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: rgba(0, 0, 0, 0.7);
+    background: radial-gradient(rgba(0, 0, 0, 0.8),rgba(33, 62, 151, 0.4));
+    z-index: 2;
+}
+
+#landingpg>#stuff>.container{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
     z-index: 2;
     min-width: 100vw;
     margin: 0 0 0 0;
@@ -67,7 +67,7 @@ header{
     align-items: center;
 }
 
-#landingpg>.container>h2{
+#landingpg>#stuff>.container>h2{
     font-size: 50px;
     font-family: 'Roboto', sans-serif;
     font-weight: 800;
@@ -76,10 +76,52 @@ header{
     text-shadow: 0 0 10px black;
 }
 
-#landingpg>.container p{
+#landingpg>#stuff>.container p{
     text-shadow: 0 0 10px black;
     color: white;
     margin-bottom: 0;
     font-style: italic;
     font-size: 19px;
 }
+
+/*\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ Filter ///////////////////////////////////////////////////////*/
+#search{
+    border-radius: 0;
+    width: 250px;
+}
+
+.btn{
+    border: 1px solid black;
+    border-radius: 0;
+}
+
+#searchbtn{
+    color: white;
+}
+
+#searchbtn:hover{
+    border: 1px solid #5c636a;
+    background-color: #5c636a;
+}
+
+
+
+#filter{
+    position: absolute;
+    top: 725px;
+    left: 20px;
+    z-index: 5;
+}
+
+#filter>nav{
+    border-radius: 200px;
+    width: 100%;
+    margin-right: 0;
+    padding-right: 0;
+}
+
+#filter>nav>.row{
+    margin-left: 15px;
+    border-radius: 200px;
+    margin-right: 15px;
+    }
