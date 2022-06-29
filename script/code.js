@@ -171,6 +171,7 @@ function budget(event){
     loadData(newProperties)
 }
 function beds(event){
+    console.log(event);
     let newProperties = properties.filter(x => {
         return x.rooms.bedrooms == event.target.value
     })
