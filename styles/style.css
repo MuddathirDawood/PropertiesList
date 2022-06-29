@@ -4,6 +4,18 @@ body{
     overflow-x: hidden;
 }
 
+::-webkit-scrollbar {
+    width: 7px;
+    height: 7px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: rgb(77, 75, 75);
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: rgb(33, 62, 151);
+  }
 
 #logo{
     width: 60px;
@@ -58,6 +70,11 @@ body{
     z-index: 2;
 }
 
+span{
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
 #landingpg>#stuff>.container{
     position: absolute;
     top: 0;
@@ -91,30 +108,12 @@ body{
 }
 
 /*\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ Filter ////////////////////////////////////////////////////////////////*/
-#search{
-    border-radius: 0;
-    width: 250px;
-    border: 1px solid black;
-}
-
-.btn{
-    border: 1px solid black;
-    border-radius: 0;
-}
-
-#searchbtn{
-    color: white;
-}
-
-#searchbtn:hover{
-    border: 1px solid #5c636a;
-    background-color: #5c636a;
-}
-
 #filter{
-    position: absolute;
-    top: 725px;
-    left: 20px;
+    position: sticky;
+    display: flex;
+    width: 675px;
+    margin: auto;
+    top: 25px;
     z-index: 5;
 }
 
@@ -128,8 +127,18 @@ body{
 #filter>nav>.row{
     margin-left: 15px;
     border-radius: 200px;
-
+    margin-right: 15px;
     }
+
+#filter>nav{
+    background-color: rgb(29, 29, 29);
+}
+
+select{
+    width: 125px;
+    background-color: rgb(77, 75, 75);
+    color: white;
+}    
 
     @media (max-width:426px){
         #filter>nav{
@@ -155,8 +164,29 @@ body{
     margin-top: 50px;
     height: 450px;
     width: 20em;
+    box-shadow: 15px 15px 15px rgb(33, 62, 151);
 }
 
 .card img{
     height: 250px;
+}
+
+/*\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ Footer ///////////////////////////////////////////////////////////////////////*/
+footer{
+    min-height: 20vh;
+    background: url(../assets/436964.png)no-repeat center center/cover;
+    border: 5px black solid;
+    position: relative;
+}
+
+footer>.container{
+    background: linear-gradient( rgba(33, 62, 151, 0.9),rgba(6, 6, 6, 0.6));
+    z-index: 2;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    min-width: 100vw;
+    position: absolute;
+    color: white;
 }

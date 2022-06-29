@@ -1,6 +1,7 @@
 let properties = [
     {
     id: 1,
+    image: 'https://i.postimg.cc/bwGzSxWr/0.jpg',
     address:{
         region: 'Hawaii Kai',
         neighbourhood: 'Kalama Valley',
@@ -14,6 +15,7 @@ let properties = [
     size: 4399
 },{
     id: 2,
+    image: 'https://i.postimg.cc/C14YpmBP/1.jpg',
     address:{
         region: 'Kailua',
         neighbourhood: 'Waimanalo',
@@ -27,6 +29,7 @@ let properties = [
     size: 7618
 },{
     id: 3,
+    image: 'https://i.postimg.cc/KvWbbKj2/2.jpg',
     address:{
         region: 'Ewa Plain',
         neighbourhood: 'Ewa Gen Terrazza',
@@ -40,6 +43,7 @@ let properties = [
     size: 3417  
 },{
     id: 4,
+    image: 'https://i.postimg.cc/gjkpz83Y/3.jpg',
     address:{
         region: 'Ewa Plain',
         neighbourhood: 'Ewa Beach',
@@ -53,6 +57,7 @@ let properties = [
     size: 5183   
 },{
     id: 5,
+    image: 'https://i.postimg.cc/15XSb09B/4.jpg',
     address:{
         region: 'Ewa Plain',
         neighbourhood: 'Ewa Gen Sun Terra',
@@ -66,6 +71,7 @@ let properties = [
     size: 3418   
 },{
     id: 6,
+    image: 'https://i.postimg.cc/6QJN7DCb/5.jpg',
     address:{
         region: 'Makakilo',
         neighbourhood: 'Makakilo-Lower',
@@ -79,6 +85,7 @@ let properties = [
     size: 6405   
 },{
     id: 7,
+    image: 'https://i.postimg.cc/ZnRktZhn/6.jpg',
     address:{
         region: 'Kaneohe',
         neighbourhood: 'Haiku Knolls',
@@ -92,6 +99,7 @@ let properties = [
     size: 20056   
 },{
     id: 8,
+    image: 'https://i.postimg.cc/3R351mSg/7.jpg',
     address:{
         region: 'Leeward',
         neighbourhood: 'Waianae',
@@ -105,6 +113,7 @@ let properties = [
     size: 1505   
 },{
     id: 9,
+    image: 'https://i.postimg.cc/VvG8dvFX/8.jpg',
     address:{
         region: 'Leeward',
         neighbourhood: 'Maili',
@@ -118,6 +127,7 @@ let properties = [
     size: 5000   
 },{
     id: 10,
+    image: 'https://i.postimg.cc/1tMxjX2b/9.jpg',
     address:{
         region: 'Metro',
         neighbourhood: 'Nuuanu-Lower',
@@ -132,14 +142,14 @@ let properties = [
 }
 ];
 
-properties.forEach((land,index)=>{
-    localStorage.setItem('land',JSON.stringify(properties));
-    console.table(index);
+function loadData(prop){
+    document.querySelector('#properties').innerHTML = '';
+    prop.forEach((land)=>{
     let rand = land.price * 15.93
     document.querySelector('#properties').innerHTML += `
             <div>
                 <div class="card">
-                    <img src="../assets/${index}.jpg" class="card-img-top" alt="...">
+                    <img src="${land.image}" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">${land.address.region}, ${land.address.neighbourhood}, ${land.address.street}</h5>
                         <h6 class="card-text">$${land.price}/ R${rand}</h6>
@@ -151,15 +161,42 @@ properties.forEach((land,index)=>{
             </div>
     `
 });
+}
+
+
+function budget(event){
+    let newProperties = properties.filter(x => {
+        return x.price <= event.target.value
+    })
+    loadData(newProperties)
+}
+function beds(event){
+    let newProperties = properties.filter(x => {
+        return x.rooms.bedrooms == event.target.value
+    })
+    loadData(newProperties)
+}
+function baths(event){
+    let newProperties = properties.filter(x => {
+        return x.rooms.bathrooms == event.target.value
+    })
+    loadData(newProperties)
+}
+function regions(event){
+    let newProperties = properties.filter(x => {
+        return x.address.region == event.target.value
+    })
+    loadData(newProperties)
+}
+
+loadData(properties);
+
+document.querySelector('#budgetstuff').addEventListener('change',budget);
+document.querySelector('#bedFilter').addEventListener('change',beds);
+document.querySelector('#bathFilter').addEventListener('change',baths);
+document.querySelector('#region').addEventListener('change',regions);
+
 
 (function addData(){
     localStorage.setItem('land',JSON.stringify(properties));
 })();
-
-
-document.querySelector('#searchbtn').addEventListener('click',()=>{
-    let budgets = function budget(amount){
-        return amount
-    }
-    console.log(typeof(budgets));
-})

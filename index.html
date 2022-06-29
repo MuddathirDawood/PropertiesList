@@ -43,50 +43,11 @@
         </header>
         <main>
           <section id="filter">
-            <nav class="navbar bg-secondary">
+            <nav class="navbar">
                 <div class="row">
-                  <!-- <div class="dropdown-center col-md-2">
-                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownCenterBtn" data-bs-toggle="dropdown">
-                      Max Price
-                    </button>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" onclick="budget(9999999999)">Any</a></li>
-                      <li><a class="dropdown-item" onclick="budget(50000)">$50000</a></li>
-                      <li><a class="dropdown-item" onclick="budget(100000)">$100000</a></li>
-                      <li><a class="dropdown-item" onclick="budget(200000)">$200000</a></li>
-                      <li><a class="dropdown-item" onclick="budget(400000)">$400000</a></li>
-                      <li><a class="dropdown-item" onclick="budget(600000)">$600000</a></li>
-                      <li><a class="dropdown-item" onclick="budget(1000000)">$1000000</a></li>
-                      <li><a class="dropdown-item" onclick="budget(5000000)">$5000000</a></li>
-                    </ul>
-                  </div>
-                  <div class="dropdown-center col-md-2">
-                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownCenterBtn" data-bs-toggle="dropdown">
-                      Bedrooms
-                    </button>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" onclick="bedrooms(2)">2</a></li>
-                      <li><a class="dropdown-item" onclick="bedrooms(3)">3</a></li>
-                      <li><a class="dropdown-item" onclick="bedrooms(4)">4</a></li>
-                      <li><a class="dropdown-item" onclick="bedrooms(5)">5</a></li>
-                      <li><a class="dropdown-item" onclick="bedrooms(6)">6</a></li>
-                      <li><a class="dropdown-item" onclick="bedrooms(99)">More than 6</a></li>
-                    </ul>
-                  </div>
-                  <div class="dropdown-center col-md-2">
-                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownCenterBtn" data-bs-toggle="dropdown">
-                      Bathrooms
-                    </button>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" onclick="bathrooms(1)">1</a></li>
-                      <li><a class="dropdown-item" onclick="bathrooms(2)">2</a></li>
-                      <li><a class="dropdown-item" onclick="bathrooms(3)">3</a></li>
-                      <li><a class="dropdown-item" onclick="bathrooms(4)">4</a></li>
-                      <li><a class="dropdown-item" onclick="bathrooms(99)">More than 4</a></li>
-                    </ul> -->
-                    <form class="d-flex col-md-2" role="search">
-                      <select>
-                        <option value="9999999999">Any</option>
+                    <form class="d-flex" role="search">
+                      <select class="mx-3" id="budgetstuff">
+                        <option value="" disabled selected hidden>Budget</option>
                         <option value="50000">50000</option>
                         <option value="100000">100000</option>
                         <option value="200000">200000</option>
@@ -95,7 +56,8 @@
                         <option value="1000000">1000000</option>
                         <option value="5000000">5000000</option>
                       </select>
-                      <select>
+                      <select class="mx-3" id="bedFilter">
+                        <option value="" disabled selected hidden>Bedrooms</option>
                         <option value="2">2</option>
                         <option value="3">3</option>
                         <option value="4">4</option>
@@ -103,15 +65,24 @@
                         <option value="6">6</option>
                         <option value="99">More Than 6</option>
                       </select>
-                      <select>
+                      <select class="mx-3" id="bathFilter">
+                        <option value="" disabled selected hidden>Bathrooms</option>
                         <option value="1">1</option>
                         <option value="2">2</option>
                         <option value="3">3</option>
                         <option value="4">4</option>
                         <option value="99">More Than 4</option>
                       </select>
-                      <input class="form-control" type="search" placeholder="Enter keyword" id="search"><br>
-                      <button class="btn" type="submit" id="searchbtn">Search</button>
+                      <select class="mx-3" id="region">
+                        <option value="" disabled selected hidden>Region</option>
+                        <option value="Hawaii Kai">Hawaii Kai</option>
+                        <option value="Kailua">Kailua</option>
+                        <option value="Ewa Plain">Ewa Plain</option>
+                        <option value="Makakilo">Makakilo</option>
+                        <option value="Kaneohe">Kaneohe</option>
+                        <option value="Leeward">Leeward</option>
+                        <option value="Metro">Metro</option>
+                      </select>
                     </form>                  
                   </div>
                 </div>
@@ -120,6 +91,21 @@
         <section id="properties">
         </section>
     </main>
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3">
+
+          </div>
+          <div class="col-md-6">
+
+          </div>
+          <div class="col-md-3 text-end">
+            2022 Copyright &copy;
+          </div>
+        </div>
+      </div>
+    </footer>
 
     <script src="https://kit.fontawesome.com/e09bf8c0bb.js" crossorigin="anonymous"></script>
     <script src="./script/code.js"></script>
