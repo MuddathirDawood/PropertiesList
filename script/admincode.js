@@ -73,8 +73,8 @@ function modalAdd(){
 }
 
 document.querySelector('#addRecord').addEventListener('click',modalAdd);
-let ids= 0
 
+let ids= 0;
 function editRecord(id){
     let newland = properties.find(edt => edt.id -1 === id)
     document.querySelector('#region2').value = newland.address.region;
@@ -100,10 +100,6 @@ function editAdd(){
     let price = document.querySelector('#price2').value;
     let landsize = document.querySelector('#landsize2').value;
 
-    // console.log(region);
-    // console.log(newProp);
-    // console.log(newland);
-
     newland.address.region = region;
     newland.address.neighbourhood = neighbour;
     newland.address.street = street;
@@ -113,10 +109,21 @@ function editAdd(){
     newland.price = price;
     newland.size = landsize;
 
-    let prop = newland;
-    properties[ids] = prop;
+    properties[ids] = newland;
     localStorage.setItem('land',JSON.stringify(properties));
     loadData(properties);
 }
 
 document.querySelector('#editProperty').addEventListener('click',editAdd);
+
+function deleteRecord(id) {
+    if(id > -1) {
+        properties.splice(id, 1);
+        for (let i = 0; i < properties.length; i++) {
+            properties[i].id = i+1;     
+        }
+        localStorage.setItem('land',JSON.stringify(properties)) 
+    }
+
+        loadData(properties);
+}
