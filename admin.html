@@ -130,12 +130,45 @@
         <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
       </div>
       <div class="modal-body">
-        <h4>Select the key pair to Edit</h4>
+        <h4>House Address</h4>
+        <div id="bottomBorder">
+            <div>
+              <label>Region:</label>
+              <input type="text" id="region2" placeholder="Enter the name of the region">
+            </div>
+            <div>
+              <label>Neighbourhood:</label>
+              <input type="text" id="nhood2" placeholder="Enter the neghbourhood name">
+            </div>
+            <div>
+              <label>Street Address:</label>
+              <input type="text" id="street2" placeholder="Enter the street address">
+            </div>
+        </div>
+        <h4>Image</h4>
+        <div id="bottomBorder">
+          <label>URL:</label>
+          <input type="text" id="urlimg2" placeholder="Enter the url for the house image" readonly>
+        </div>
+        <h4>Rooms</h4>
+        <div id="bottomBorder">
+          <label>Bedrooms:</label>
+          <input type="number" id="bedNumb2" placeholder="Enter the amount of bedrooms the house has">
+          <label>Bathrooms:</label>
+          <input type="number" id="bathNumb2" placeholder="Enter the amoun of bathrooms the house has">
+        </div>
+        <h4>Other</h4>
+        <div id="bottomBorder">
+          <label>Price:</label>
+          <input type="number" id="price2" placeholder="Enter the cost of the house">
+          <label>Land Size(Square Metres):</label>
+          <input type="number" id="landsize2" placeholder="Enter the size of the land in square metres">
+        </div>
 
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary" id="addRecord">Save changes</button>
+        <button type="button" class="btn btn-primary" id="editProperty">Save changes</button>
       </div>
     </div>
   </div>

@@ -29,6 +29,17 @@ header>div>button:hover {
     color: white;
 }
 
+
+#headings {
+    font-weight: 700;
+    border: none;
+    text-align: center;
+}
+
+#headings p{
+    margin: 0;
+}
+
 #total {
     font-size: 12px;
     padding: 0 5px 0 5px;
@@ -52,13 +63,17 @@ header>div>button:hover {
 }
 
 /* \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ Properties ////////////////////////////////////////////////////////////////////*/
-.card {
+#properties .card {
     display: flex;
     flex-flow: row wrap;
     gap: 100px;
 }
 
-.row div {
+#properties{
+    border-top: 1px solid black;
+}
+
+#properties .row div {
     text-align: center;
     border-top: 1px solid rgb(110, 110, 110);
     border-bottom: 1px solid rgb(110, 110, 110);
