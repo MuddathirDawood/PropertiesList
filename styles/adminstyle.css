@@ -7,6 +7,10 @@ header>div {
     height: 70px;
 }
 
+body{
+    overflow-x: hidden;
+}
+
 header>div>a {
     font-weight: 700;
     text-decoration: none;
