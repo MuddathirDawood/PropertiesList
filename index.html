@@ -43,10 +43,12 @@
         </header>
         <main>
           <section id="filter">
-            <nav class="navbar">
-                <div class="row">
-                    <form class="d-flex" role="search">
-                      <select class="mx-3" id="budgetstuff">
+            <!-- <nav class="navbar"> -->
+              <form class="d-flex container" role="search">
+                <div class="row" id="row">
+
+                  <div class="col-md-3">
+                  <select class="mx-3 " id="budgetstuff">
                         <option value="" disabled selected hidden>Budget</option>
                         <option value="9999999999">Any</option>
                         <option value="50000">$50000</option>
@@ -57,7 +59,9 @@
                         <option value="1000000">$1000000</option>
                         <option value="5000000">$5000000</option>
                       </select>
-                      <select class="mx-3" id="bedFilter">
+                  </div>
+                  <div class="col-md-3">
+                     <select class="mx-3 " id="bedFilter">
                         <option value="" disabled selected hidden>Bedrooms</option>
                         <option value="9999">Any</option>
                         <option value="2">2</option>
@@ -67,7 +71,9 @@
                         <option value="6">6</option>
                         <option value="99">More Than 6</option>
                       </select>
-                      <select class="mx-3" id="bathFilter">
+                  </div>
+                  <div class="col-md-3">
+                    <select class="mx-3 " id="bathFilter">
                         <option value="" disabled selected hidden>Bathrooms</option>
                         <option value="999999">Any</option>
                         <option value="1">1</option>
@@ -76,7 +82,10 @@
                         <option value="4">4</option>
                         <option value="99">More Than 4</option>
                       </select>
-                      <select class="mx-3" id="region">
+                  </div>
+                  <div class="col-md-3">
+                     
+                      <select class="mx-3 " id="region">
                         <option value="" disabled selected hidden>Region</option>
                         <option value="Hawaii Kai">Hawaii Kai</option>
                         <option value="Kailua">Kailua</option>
@@ -86,10 +95,14 @@
                         <option value="Leeward">Leeward</option>
                         <option value="Metro">Metro</option>
                       </select>
+                  </div>
+                      
+                     
+                     
                     </form>                  
                   </div>
                 </div>
-              </nav>
+              <!-- </nav> -->
           </section>
         <section id="properties">
         </section>

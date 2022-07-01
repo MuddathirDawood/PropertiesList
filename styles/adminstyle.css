@@ -1,4 +1,4 @@
-header {
+header>div {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
@@ -7,14 +7,14 @@ header {
     height: 70px;
 }
 
-header>a {
+header>div>a {
     font-weight: 700;
     text-decoration: none;
     color: black;
     font-size: 17px;
 }
 
-header>button {
+header>div>button {
     width: 135px;
     margin-right: 15px;
     height: 38px;
@@ -24,7 +24,7 @@ header>button {
     color: rgb(33, 62, 151);
 }
 
-header>button:hover {
+header>div>button:hover {
     background-color: rgb(33, 62, 151);
     color: white;
 }
@@ -60,7 +60,8 @@ header>button:hover {
 
 .row div {
     text-align: center;
-    border: 1px solid rgb(110, 110, 110);
+    border-top: 1px solid rgb(110, 110, 110);
+    border-bottom: 1px solid rgb(110, 110, 110);
 }
 
 #headings {

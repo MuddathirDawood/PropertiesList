@@ -111,7 +111,6 @@ span{
 #filter{
     position: sticky;
     display: flex;
-    width: 675px;
     margin: auto;
     top: 25px;
     z-index: 5;
@@ -119,7 +118,6 @@ span{
 
 #filter>nav{
     border-radius: 200px;
-    width: 100%;
     margin-right: 0;
     padding-right: 0;
 }
@@ -139,6 +137,10 @@ select{
     background-color: rgb(77, 75, 75);
     color: white;
 }    
+
+#row>.col-md-3{
+min-width: 50vw;
+}
 
     @media (max-width:426px){
         #filter>nav{
@@ -186,7 +188,7 @@ footer>.container{
     bottom: 0;
     left: 0;
     right: 0;
-    min-width: 100vw;
+    min-width: 98vw;
     position: absolute;
     color: white;
 }

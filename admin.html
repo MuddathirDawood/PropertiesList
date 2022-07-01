@@ -10,15 +10,39 @@
 </head>
 <body>
     <header>
+      <div>
         <h2 class="ms-2">Properties <span id="total"></span></h2>
 
         <a href="./index.html">Properties</a>
         <button data-bs-toggle="modal" data-bs-target="#Modal1">Add Property +</button>
-
+      </div>
+      <div class="row" id="headings">
+        <div class="col-1">
+            <p>ID</p>
+        </div>
+        <div class="col-4 text-center">
+        <p>Home Address</p>
+        </div>
+        <div class="col-2">
+        <p>Price</p>
+        </div>
+        <div class="col-1">
+        <p>Bedrooms</p>
+        </div>
+        <div class="col-1">
+        <p>Bathrooms</p>
+        </div>
+        <div class="col-1">
+        <p>Land Size</p>
+        </div>
+        <div class="col-2">
+         <p>Edit</p>   
+        </div>
+    </div>  
     </header>
     <main>
         <section id="properties">
-            <div class="row" id="headings">
+            <!-- <div class="row" id="headings">
                 <div class="col-1">
                     <p>ID</p>
                 </div>
@@ -40,7 +64,7 @@
                 <div class="col-2">
                  <p>Edit</p>   
                 </div>
-            </div>
+            </div> -->
 
         </section>
     </main>
@@ -91,12 +115,31 @@
             </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-              <button type="button" class="btn btn-primary">Save changes</button>
+              <button type="button" class="btn btn-primary" id="addRecord">Save changes</button>
             </div>
           </div>
         </div>
       </div>
 
+<!-- MODAL 2 -->
+<div class="modal fade" id="Modal2" tabindex="-1">
+  <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="Modal2Label">Edit Property</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <h4>Select the key pair to Edit</h4>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary" id="addRecord">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
 
     <script src="./script/admincode.js"></script>
     <script src="https://kit.fontawesome.com/e09bf8c0bb.js" crossorigin="anonymous"></script>
