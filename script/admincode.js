@@ -127,3 +127,30 @@ function deleteRecord(id) {
 
         loadData(properties);
 }
+
+let ascending = true;
+function sort() {
+  ascending = !ascending;
+  let sort = properties.sort((a, b) => {
+    let fa = a.address.region.toLowerCase(),
+      fb = b.address.region.toLowerCase();
+    if (fa < fb) {
+      return -1;
+    }
+    if (fa > fb) {
+      return 1;
+    }
+    return 0;
+  });
+  
+  if (ascending == false) {
+    document.querySelector("#icSort").innerHTML = `<i class="fa-solid fa-arrow-down-a-z"></i>`;
+    loadData(sort);
+  } else if (ascending == true) {
+    document.querySelector("#icSort").innerHTML = `<i class="fa-solid fa-arrow-down-z-a"></i>`;
+    sort.reverse();
+    loadData(sort);
+  }
+  console.log(ascending);
+}
+document.querySelector("#sort").addEventListener("click", sort);

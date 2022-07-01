@@ -14,7 +14,7 @@ header>div>a {
     font-size: 17px;
 }
 
-header>div>button {
+header>div>div>button {
     width: 135px;
     margin-right: 15px;
     height: 38px;
@@ -24,11 +24,14 @@ header>div>button {
     color: rgb(33, 62, 151);
 }
 
-header>div>button:hover {
+header>div>div>button:hover {
     background-color: rgb(33, 62, 151);
     color: white;
 }
 
+#add{
+    width: 155px;
+}
 
 #headings {
     font-weight: 700;
@@ -72,13 +75,14 @@ header>div>button:hover {
 #properties{
     border-top: 1px solid black;
     background: url(../assets/436964.png)no-repeat center center/cover;
+    color: white;
 }
 
 #properties .row div {
     text-align: center;
     border-top: 1px solid rgb(110, 110, 110);
     border-bottom: 1px solid rgb(110, 110, 110);
-    background-color: rgba(240, 248, 255, 0.512);
+    background-color: rgba(33, 63, 151, 0.5);
 }
 
 #headings {
